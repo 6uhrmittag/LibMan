@@ -1,2 +1,0 @@
-# LibMan
-Java programming assignment
