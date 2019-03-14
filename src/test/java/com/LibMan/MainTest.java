@@ -28,8 +28,8 @@ class MainTest{
     @Start
     private void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/GUI.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("LibMan - Bibliotheksmanagement");
+        primaryStage.setScene(new Scene(root));
         primaryStage.centerOnScreen();
         primaryStage.show();
         primaryStage.toFront();
@@ -40,6 +40,6 @@ class MainTest{
      */
     @Test
     void should_contain_button_with_text(FxRobot robot) {
-        FxAssert.verifyThat("#btnCenter", LabeledMatchers.hasText("Button"));
+        FxAssert.verifyThat("#btnAusleihen", LabeledMatchers.hasText("Ausleihen"));
     }
 }
