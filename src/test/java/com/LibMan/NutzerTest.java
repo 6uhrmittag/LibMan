@@ -17,7 +17,7 @@ class NutzerTest {
     @ParameterizedTest
     @ValueSource(strings = { "hans", "tim" })
     void createNewNutzer(String name) {
-        Nutzer nutzer = new Nutzer(name, LocalDate.now());
+        Nutzer nutzer = new Nutzer(name, LocalDate.now(), new Ausweis());
         assertEquals(nutzer.getGeburtsdatum(), LocalDate.now());
         assertEquals(nutzer.getName(), name);
         assertEquals(nutzer.getGebuehrenstand(), new BigDecimal("0.0"));
@@ -27,7 +27,7 @@ class NutzerTest {
     @ParameterizedTest
     @ValueSource(strings = { "1.0", "1.5", "2.0" })
     void setGebuehrenstandToPositive(String value) {
-        Nutzer nutzer = new Nutzer("hans", LocalDate.now());
+        Nutzer nutzer = new Nutzer("hans", LocalDate.now(), new Ausweis());
         assertEquals(nutzer.getGebuehrenstand(), new BigDecimal("0.0"));
         nutzer.setGebuehrenstand(new BigDecimal(value));
         assertEquals(nutzer.getGebuehrenstand(), new BigDecimal(value));
@@ -37,7 +37,7 @@ class NutzerTest {
     @ParameterizedTest
     @ValueSource(strings = { "-0.1", "-1.0", "-1.5", "-2.0" })
     void setGebuehrenstandToNegative(String value) {
-        Nutzer nutzer = new Nutzer("hans", LocalDate.now());
+        Nutzer nutzer = new Nutzer("hans", LocalDate.now(), new Ausweis());
         assertEquals(nutzer.getGebuehrenstand(), new BigDecimal("0.0"));
         nutzer.setGebuehrenstand(new BigDecimal(value));
         assertEquals(nutzer.getGebuehrenstand(), new BigDecimal("0.0"));

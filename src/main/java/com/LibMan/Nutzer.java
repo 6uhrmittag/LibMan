@@ -15,13 +15,14 @@ public class Nutzer {
 
 
     private BigDecimal gebuehrenstand;
-    private Ausweis ausweis;
+    public Ausweis ausweis;
 
-    public Nutzer(String name, LocalDate geburtsdatum) {
+    public Nutzer(String name, LocalDate geburtsdatum, Ausweis ausweis) {
         this.name = name;
         this.geburtsdatum = geburtsdatum;
         this.nutzerID = UUID.randomUUID();
         this.gebuehrenstand = new BigDecimal( "0.0" );
+        this.ausweis = ausweis;
     }
 
     public boolean anmeldung() {
