@@ -19,7 +19,9 @@ public class Buch {
         this.buchID = UUID.randomUUID();
     }
 
-    public void ausleihen() {
+    public Ausleihobject ausleihen(Nutzer nutzer) {
+
+        return new Ausleihobject(this, nutzer, LocalDate.now().plusWeeks(2));
     }
 
     public void vorbestellen() {

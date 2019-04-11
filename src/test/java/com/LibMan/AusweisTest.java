@@ -19,6 +19,13 @@ class AusweisTest {
     }
 
     @Test
+    void createNewAusweis(){
+        Ausweis ausweis = new Ausweis();
+        assertEquals(ausweis.getAbaufDatum(), '1' );
+        assertThat(ausweis.getAusweisID(), instanceOf(java.util.UUID.class));
+    }
+
+    @Test
     void setAbaufDatum() {
         Ausweis ausweis = new Ausweis();
         assertEquals(ausweis.getAbaufDatum(), LocalDate.now().plusYears(1) );

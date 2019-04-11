@@ -11,7 +11,11 @@ public class Ausleihobject {
     private LocalDate rueckgabeDatum;
     private Boolean vorbestellt;
 
-    public Ausleihobject() { }
+    public Ausleihobject(Buch buch, Nutzer nutzer, LocalDate rueckgabeDatum) {
+        this.buch = buch;
+        this.nutzer = nutzer;
+        this.rueckgabeDatum = rueckgabeDatum;
+    }
 
     public Buch getBuch() { return buch; }
 

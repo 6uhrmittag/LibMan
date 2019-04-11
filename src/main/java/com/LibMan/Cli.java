@@ -1,6 +1,7 @@
 package com.LibMan;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Cli {
     public static void main(String[] args) {
@@ -13,6 +14,13 @@ public class Cli {
         Nutzer nutzer1 = new Nutzer("heinz", LocalDate.now(), ausweis1);
         System.out.println("nutzer1, Name: Heinz: " + nutzer1.getName() + " " + nutzer1.ausweis.getAusweisID().toString() + " " + nutzer1.ausweis.getAbaufDatum());
 
+        //Test Buch
+        Buch buch1 = new Buch("Bibel", "Jebus", false);
+        System.out.println(("buch1: Titel: " + buch1.getTitel() + " " + buch1.getAuthor() + " " + buch1.getAusleihbar().toString()));
+
+        Speicher speicher = new Speicher();
+        speicher.speichern(buch1.ausleihen(nutzer1));
+        (Speicher)speicher.get;
 
     }
 }

@@ -1,13 +1,15 @@
 package com.LibMan;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Account {
 
-    private Ausleihobject ausleihen = null;
-    private Ausweis ausweis = null;
 
-    public Account() {
+    ArrayList<Ausweis> ausweis = new ArrayList();
+    ArrayList<Ausleihobject> ausleihe = new ArrayList();
+
+    public Account(Ausweis ausweis, Ausleihobject ausleihobject) {
     }
 
 
