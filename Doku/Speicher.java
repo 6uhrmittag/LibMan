@@ -7,6 +7,7 @@ public class Speicher {
     private ArrayList<Ausleihobject> speicher = new ArrayList();
 
     public Speicher() {
+
     }
 
     public void speichern(Ausleihobject ausleihe) {
