@@ -17,20 +17,36 @@ public class Ausleihobject {
         this.rueckgabeDatum = rueckgabeDatum;
     }
 
-    public Buch getBuch() { return buch; }
+    public Buch getBuch() {
+        return buch;
+    }
 
-    public Nutzer getNutzer() { return nutzer; }
+    public Nutzer getNutzer() {
+        return nutzer;
+    }
 
-    public LocalDate getRueckgabeDatum() { return rueckgabeDatum; }
+    public LocalDate getRueckgabeDatum() {
+        return rueckgabeDatum;
+    }
 
-    public Boolean getVorbestellt() { return vorbestellt; }
+    public Boolean getVorbestellt() {
+        return vorbestellt;
+    }
 
-    public void setBuch(Buch buch) { this.buch = buch; }
+    public void setBuch(Buch buch) {
+        this.buch = buch;
+    }
 
-    public void setNutzer(Nutzer nutzer) { this.nutzer = nutzer; }
+    public void setNutzer(Nutzer nutzer) {
+        this.nutzer = nutzer;
+    }
 
-    public void setRueckgabeDatum(LocalDate rueckgabeDatum) { this.rueckgabeDatum = rueckgabeDatum; }
+    public void setRueckgabeDatum(LocalDate rueckgabeDatum) {
+        this.rueckgabeDatum = rueckgabeDatum;
+    }
 
-    public void setVorbestellt(Boolean vorbestellt) { this.vorbestellt = vorbestellt; }
+    public void setVorbestellt(Boolean vorbestellt) {
+        this.vorbestellt = vorbestellt;
+    }
 
 }

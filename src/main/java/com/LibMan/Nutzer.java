@@ -3,6 +3,7 @@ package com.LibMan;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
+import java.util.ArrayList;
 
 
 public class Nutzer {
@@ -12,10 +13,18 @@ public class Nutzer {
     private LocalDate geburtsdatum;
     private UUID nutzerID;
 
-
-
     private BigDecimal gebuehrenstand;
     public Ausweis ausweis;
+
+    private ArrayList<Ausleihobject> ausleihen;
+
+    public void ausleihen(Ausleihobject buch) {
+        this.ausleihen.add(buch);
+    }
+
+    public ArrayList<Ausleihobject> getausleihen() {
+        return ausleihen;
+    }
 
     public Nutzer(String name, LocalDate geburtsdatum, Ausweis ausweis) {
         this.name = name;

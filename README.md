@@ -1,2 +1,2 @@
 # LibMan
-Java programming assignment
+Java bibliotheks tool

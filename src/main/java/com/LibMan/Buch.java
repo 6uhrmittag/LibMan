@@ -1,6 +1,7 @@
 package com.LibMan;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Random;
 import java.time.temporal.ChronoUnit;
 import java.util.UUID;
@@ -24,10 +25,14 @@ public class Buch {
         return new Ausleihobject(this, nutzer, LocalDate.now().plusWeeks(2));
     }
 
-    public void vorbestellen() {
+    public void vorbestellen(
+
+    ) {
     }
+
     public void zurueckgeben() {
     }
+
     public void verlaengern() {
     }
 
