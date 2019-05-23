@@ -19,11 +19,11 @@ public class Cli {
         System.out.println(("buch1: Titel: " + buch1.getTitel() + " " + buch1.getAuthor() + " " + buch1.getAusleihbar().toString()));
 
 
+        // Speichern der Ausleihen in zentralen Speicher
         ArrayList<Ausleihobject> speicher = new ArrayList<>();
 
 
         speicher.add(buch1.ausleihen(nutzer1));
-
 
         System.out.println(speicher.get(0).getBuch().getTitel());
 
